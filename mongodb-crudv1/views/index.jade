@@ -1,0 +1,16 @@
+extends layout
+block contenido
+  div(class="container")
+  h1(class="blue") Listado de usuarios
+  table(class="stiped")
+    tr
+      th Nombre
+      th Apellido
+      th Edad
+      th Pais
+    for usu in usuarios
+      tr
+        td #{usu.nombre}
+        td #{usu.apellido}
+        td #{usu.edad}
+        td #{usu.pais}
